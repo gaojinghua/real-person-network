@@ -12,6 +12,7 @@
 <h1>用人话总结这个创业方向</h1>
 <p class="deck">做一个“真人版”的 AI 社交网络：一句话说出需求，AI 直接找到能帮忙的活人，并促成付费。中间不再需要内容和货架。</p>
 
+<div class="q-actions"><button type="button" class="copy-btn on-paint" data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button></div>
 </header>
 <main class="q-main">
 <details class="ask"><summary>原问题</summary><p>抖音和小红书都赶上了智能终端、摄像头和流媒体的年代，但 AI 时代的新产品还没出来。应该有一种形态，让用户更低门槛地随时随地表达需求和想法，AI 理解、互动、匹配推荐。连接的不只是内容，而是能提供资源和帮助的活人和活人的 AI 分身。比如技术问题随时有牛人连线，挂号、跑腿、代办、交易、问答都可以，&quot;我愿意为这个号出 1000 黄牛费&quot;&quot;我愿意为这个专业问题付 200&quot;。知乎、小红书、闲鱼、电商货架、推荐，都是过去的形态和技术。本质就是需求理解、现实世界的数字化、搜索或推荐完成连接。让每一个人的知识、经验、能力和资源都能被定价、被连接、被交易。想象互联网诞生的第一天就有现在的 AI 能力，我们会怎么做？用人话总结一下这个创业方向。</p></details>
@@ -66,7 +67,47 @@
 </tr>
 </tbody>
 </table></div></article>
+<div class="copy-row"><button type="button" class="copy-btn " data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button><span>包含原问题、完整回答和来源链接，配图换成图注文字</span></div>
 <nav class="pn-row"><a class="pn prev" href="index.html"><span>返回</span>全部问题</a><a class="pn next" href="q02.html"><span>下一题</span>宠物赛道合不合适？</a></nav>
 </main>
 <footer>AI 原生真人服务网络：问题与分析 · 更新于 2026-10-28</footer>
+<script type="text/markdown" id="md-q">## 问题一：用人话总结这个创业方向
+
+> **原问题：** 抖音和小红书都赶上了智能终端、摄像头和流媒体的年代，但 AI 时代的新产品还没出来。应该有一种形态，让用户更低门槛地随时随地表达需求和想法，AI 理解、互动、匹配推荐。连接的不只是内容，而是能提供资源和帮助的活人和活人的 AI 分身。比如技术问题随时有牛人连线，挂号、跑腿、代办、交易、问答都可以，"我愿意为这个号出 1000 黄牛费""我愿意为这个专业问题付 200"。知乎、小红书、闲鱼、电商货架、推荐，都是过去的形态和技术。本质就是需求理解、现实世界的数字化、搜索或推荐完成连接。让每一个人的知识、经验、能力和资源都能被定价、被连接、被交易。想象互联网诞生的第一天就有现在的 AI 能力，我们会怎么做？用人话总结一下这个创业方向。
+
+**一句话：** 做一个"真人版"的 AI 社交网络，让任何人随时一句话找到能帮自己解决问题的活人，并且愿意为此付钱。
+
+1. **每个人把自己"喂"给 AI。** 你懂什么、会什么、手里有什么资源、能帮别人解决什么问题，都告诉自己的 AI 分身。不用写帖子、拍视频、开店铺、上架商品。
+2. **有需求的人一句话说出来。** 不用搜、不用刷、不用翻评论区和私信。
+3. **AI 理解需求、匹配真人、撮合成交。** 匹配到的不是内容、账号或商品，而是一个带着知识、经验、能力和资源的活人。
+
+**核心判断：** 过去所有平台都是先把现实世界变成内容或商品，再靠搜索和推荐让人去找，因为机器不懂人话。现在 AI 懂人话了，这一层中间物可以拿掉，需求和供给可以用自然语言直接对接。
+
+*配图：过去要经过内容和货架才能找到人，现在 AI 直接把需求对上真人。*
+
+**机会在两处：** 一是通用 agent 解决不了、需要真人在现实世界出手的事，比如挂号、跑腿、代办、找资源。二是过去没被定价、没被连接的个人能力。微信只能连熟人，知乎不收钱，闲鱼只认商品。
+
+| 平台 | 连接的是什么 | 供给方门槛 | 能否交易 |
+| --- | --- | --- | --- |
+| 知乎 | 回答内容 | 要会写 | 弱 |
+| 小红书 | 图文和视频内容 | 要会做内容、做号 | 弱，靠私信 |
+| 闲鱼、电商 | 上架的商品 | 要会上架、运营店铺 | 强 |
+| 微信 | 熟人 | 只能连熟人 | 靠转账 |
+| 本项目 | 带能力和资源的活人 | 会说话就行，AI 替他建分身 | 强，平台担保 |
+
+</script>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var src = document.getElementById(btn.dataset.copy).textContent.replace(/<\\\//g, '</');
+    var done = function () { var old = btn.dataset.label; btn.textContent = '已复制'; btn.classList.add('ok');
+      setTimeout(function () { btn.textContent = old; btn.classList.remove('ok'); }, 1600); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(src).then(done, function () { fallback(src); done(); });
+    } else { fallback(src); done(); }
+  });
+});
+function fallback(text) { var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+</script>
 </body></html>

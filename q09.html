@@ -12,6 +12,7 @@
 <h1>传统平台的痛点，我们会不会遇到？</h1>
 <p class="deck">闲鱼和 58 的痛点我们大多也会遇到。最要警惕的是跳单和信任。</p>
 
+<div class="q-actions"><button type="button" class="copy-btn on-paint" data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button></div>
 </header>
 <main class="q-main">
 <details class="ask"><summary>原问题</summary><p>传统这些平台如闲鱼、58 同城，他们面临哪些痛点？这些痛点我们会不会面临？面临的话有哪些可以尝试的解法？</p></details>
@@ -77,7 +78,42 @@
 </table></div>
 <p><strong>最值得担心的是跳单和信任。</strong> 跳单和"沉淀长期关系"这个卖点天然冲突。用户和服务者熟了以后，平台必须持续提供他们自己做不到的东西，比如担保、保险、排期和跨品类找人。</p>
 <p><strong>给投资人的一句话：</strong> 找真人帮忙的需求一直都在，过去做不起来，是因为小额委托的组织成本太高，养不活中介。大模型让这层组织成本接近零。AI 只解决协调，信任和履约还要靠运营一单单做出来。所以我们的壁垒不是模型，而是积累下来的可用真人关系、履约数据和协调能力。</p></article>
+<div class="copy-row"><button type="button" class="copy-btn " data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button><span>包含原问题、完整回答和来源链接，配图换成图注文字</span></div>
 <nav class="pn-row"><a class="pn prev" href="q08.html"><span>上一题</span>为什么现在能用 AI 解决找真人服务的事？</a><a class="pn next" href="q10.html"><span>下一题</span>运营不也有成本吗？</a></nav>
 </main>
 <footer>AI 原生真人服务网络：问题与分析 · 更新于 2026-10-28</footer>
+<script type="text/markdown" id="md-q">## 问题九：传统平台的痛点，我们会不会遇到？
+
+> **原问题：** 传统这些平台如闲鱼、58 同城，他们面临哪些痛点？这些痛点我们会不会面临？面临的话有哪些可以尝试的解法？
+
+| 痛点 | 在闲鱼、58 上的表现 | 我们会不会遇到 | 可以尝试的解法 |
+| --- | --- | --- | --- |
+| 信息不真实 | 中介冒充个人，虚假信息，照片和本人对不上 | 会 | 供给少而精，只放亲自见过、实名、试过单的人；AI 在录分身和每次服务后持续核验 |
+| 跳单 | 聊上之后加微信私下交易，平台拿不到钱 | 会，而且更严重，因为我们鼓励长期合作 | 让平台在匹配之后仍然有用：担保、保险、日报、排期、纠纷处理；抽佣压低；盯住复购里有多少留在平台 |
+| 低频，留不住人 | 用户有事才来，办完就走 | 会 | 同一张真人网络跨品类；保留档案；节假日前主动提醒 |
+| 非标服务难控质量 | 服务好坏全凭运气，纠纷靠双方吵 | 会，上门服务更明显 | 交付拆成清单，打卡加视频加 AI 日报；先付款进平台，完成再结算；每单配保险 |
+| 供需时间错配 | 节假日约不到人，平时没单 | 会 | 提前开预约池，节假日动态定价，储备兼职供给，扩品类填平平时单量 |
+| 获客靠买流量 | 竞价排名，付钱的商家排前面，劣币驱逐良币 | 规模大了会 | 早期靠社区和转介绍；收入不来自供给方广告费，排序只看匹配和口碑 |
+| 规模大了人工成本上涨 | 自营模式人力很重 | 这正是我们押注能避开的 | 协调、客服、回访交给 AI，人工只处理异常；每月盯单均人工时间 |
+| 平台责任和监管 | 出事后平台和服务者互相推责任 | 会，消协已经在点名 | 明确平台是撮合和担保方；保险覆盖双方；主动对接行业标准 |
+
+**最值得担心的是跳单和信任。** 跳单和"沉淀长期关系"这个卖点天然冲突。用户和服务者熟了以后，平台必须持续提供他们自己做不到的东西，比如担保、保险、排期和跨品类找人。
+
+**给投资人的一句话：** 找真人帮忙的需求一直都在，过去做不起来，是因为小额委托的组织成本太高，养不活中介。大模型让这层组织成本接近零。AI 只解决协调，信任和履约还要靠运营一单单做出来。所以我们的壁垒不是模型，而是积累下来的可用真人关系、履约数据和协调能力。
+
+</script>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var src = document.getElementById(btn.dataset.copy).textContent.replace(/<\\\//g, '</');
+    var done = function () { var old = btn.dataset.label; btn.textContent = '已复制'; btn.classList.add('ok');
+      setTimeout(function () { btn.textContent = old; btn.classList.remove('ok'); }, 1600); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(src).then(done, function () { fallback(src); done(); });
+    } else { fallback(src); done(); }
+  });
+});
+function fallback(text) { var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+</script>
 </body></html>

@@ -12,6 +12,7 @@
 <h1>能解决信任的问题吗？</h1>
 <p class="deck">AI 不直接解决信任，它让过去太贵的信任机制变便宜。早期靠挑场景和人工兜底。</p>
 
+<div class="q-actions"><button type="button" class="copy-btn on-paint" data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button></div>
 </header>
 <main class="q-main">
 <details class="ask"><summary>原问题</summary><p>你觉得这个能解决信任的问题么？一个人把需求给另外一个人做，如何解决信任的问题呢</p></details>
@@ -57,7 +58,40 @@
 <li><strong>早期信任靠人工。</strong> 第一批供给者亲自筛，出了问题亲自处理。大众点评早期评价是编辑写的，Airbnb 早期创始人挨家拍照。</li>
 <li><strong>信任是要用时间建的资产，</strong> 不是上线前要想通的功能。</li>
 </ul></article>
+<div class="copy-row"><button type="button" class="copy-btn " data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button><span>包含原问题、完整回答和来源链接，配图换成图注文字</span></div>
 <nav class="pn-row"><a class="pn prev" href="q03.html"><span>上一题</span>这个方向是不是太大了？</a><a class="pn next" href="q05.html"><span>下一题</span>商业模式的重点是什么，投资人会怎么看？</a></nav>
 </main>
 <footer>AI 原生真人服务网络：问题与分析 · 更新于 2026-10-28</footer>
+<script type="text/markdown" id="md-q">## 问题四：能解决信任的问题吗？
+
+> **原问题：** 你觉得这个能解决信任的问题么？一个人把需求给另外一个人做，如何解决信任的问题呢
+
+**结论：** AI 本身不解决信任，解决信任的是机制。AI 能让一些过去太贵的机制变便宜。信任其实是四件事：
+
+| 信任类型 | 用户在担心什么 | 传统解法 | AI 能新加什么 |
+| --- | --- | --- | --- |
+| 能力 | 这个人是不是真的懂 | 认证、评分、看作品 | 录分身时就在"面试"他，服务后还能评估质量，可以持续低成本地核验 |
+| 履约 | 会不会跑路或敷衍 | 平台担保、押金、先款后货 | 帮助有限，主要靠老办法 |
+| 兜底 | 事没办好钱怎么办 | 平台退款和赔付 | 不是技术问题，早期由平台出钱兜底 |
+| 隐私和安全 | 信息交出去安不安全 | 平台规则 | 先对 AI 说，由 AI 决定给谁看、给看多少，相当于多一层代理 |
+
+- **选场景就是在选信任难度。** 线上问答主要是能力和兜底，上门服务最重的是履约和安全。
+- **早期信任靠人工。** 第一批供给者亲自筛，出了问题亲自处理。大众点评早期评价是编辑写的，Airbnb 早期创始人挨家拍照。
+- **信任是要用时间建的资产，** 不是上线前要想通的功能。
+
+</script>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var src = document.getElementById(btn.dataset.copy).textContent.replace(/<\\\//g, '</');
+    var done = function () { var old = btn.dataset.label; btn.textContent = '已复制'; btn.classList.add('ok');
+      setTimeout(function () { btn.textContent = old; btn.classList.remove('ok'); }, 1600); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(src).then(done, function () { fallback(src); done(); });
+    } else { fallback(src); done(); }
+  });
+});
+function fallback(text) { var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+</script>
 </body></html>

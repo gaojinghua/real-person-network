@@ -12,6 +12,7 @@
 <h1>运营不也有成本吗？</h1>
 <p class="deck">运营一定有成本，关键是每单分摊的成本能不能随规模下降。AI 压掉的主要是随单量增长的协调成本。</p>
 <div class="stats"><div class="stat"><b>约 17 元</b><span>纯人工时每单协调和客服成本（假设）</span></div><div class="stat"><b>约 2.5 元</b><span>AI 承担常规协调后（假设）</span></div><div class="stat"><b>60 元起</b><span>平台每单收入</span></div></div>
+<div class="q-actions"><button type="button" class="copy-btn on-paint" data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button></div>
 </header>
 <main class="q-main">
 <details class="ask"><summary>原问题</summary><p>运营不也有成本么</p></details>
@@ -97,7 +98,54 @@
 <li><strong>早期人工投入是必须的。</strong> 这是在买第一批信任和数据。</li>
 </ul>
 <p><strong>传统平台走了两个极端。</strong> 闲鱼几乎不做运营，成本低但信任解决不了；58到家这类自营模式运营很重，成本降不下来。我们押注中间那条路：信任相关的运营由人做，而且做重；协调相关的运营交给 AI，越做越轻。</p></article>
+<div class="copy-row"><button type="button" class="copy-btn " data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button><span>包含原问题、完整回答和来源链接，配图换成图注文字</span></div>
 <nav class="pn-row"><a class="pn prev" href="q09.html"><span>上一题</span>传统平台的痛点，我们会不会遇到？</a><a class="pn next" href="q11.html"><span>下一题</span>不是商家的普通人，怎么让用户敢托付？</a></nav>
 </main>
 <footer>AI 原生真人服务网络：问题与分析 · 更新于 2026-10-28</footer>
+<script type="text/markdown" id="md-q">## 问题十：运营不也有成本吗？
+
+> **原问题：** 运营不也有成本么
+
+**结论：** 对，而且早期会花得很多。关键不是有没有运营成本，而是每一单分摊到的运营成本会不会随规模持续下降。
+
+| 运营成本 | 和单量的关系 | AI 能不能降 | 怎么让它变小 |
+| --- | --- | --- | --- |
+| 沟通协调：问需求、找人、确认时间、改约 | 每单都有 | 能，这是 AI 主要替代的部分 | 常规情况交给 AI，人只看例外 |
+| 客服和回访 | 每单都有 | 大部分能 | AI 日报和自动回访，人只处理投诉 |
+| 供给招募和审核 | 按人算，一次性 | 只能降一点 | 服务者留得越久，分摊到每单越少 |
+| 纠纷和事故处理 | 按出事次数算 | 降不了处理本身 | 更好的筛人和履约记录压低出事率 |
+| 保险和赔付 | 每单都有 | 降不了 | 履约记录好了，和保险公司谈更低费率 |
+
+**算一笔账（全是假设，前 100 单要用真实数据替换）：**
+
+| 项目 | 纯人工 | AI 承担常规协调后 |
+| --- | --- | --- |
+| 每单协调和客服时间 | 约 20 分钟 | 约 3 分钟 |
+| 按每小时 50 元人力折算 | 约 17 元 | 约 2.5 元 |
+| 招募一个服务者花 3 小时，一年接 100 单，每单分摊 | 约 1.5 元 | 约 1.5 元 |
+| 平台每单收入 | 60 到 80 元 | 60 到 80 元 |
+
+*配图：AI 改变的主要是第一项：随单量增长的协调和客服成本。*
+
+- **服务者流失率高，招募就摊不薄。** 供给留存既是体验问题，也是成本问题。
+- **保险和赔付是硬成本。** 只能靠出事率下降和规模议价来降。
+- **早期人工投入是必须的。** 这是在买第一批信任和数据。
+
+**传统平台走了两个极端。** 闲鱼几乎不做运营，成本低但信任解决不了；58到家这类自营模式运营很重，成本降不下来。我们押注中间那条路：信任相关的运营由人做，而且做重；协调相关的运营交给 AI，越做越轻。
+
+</script>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var src = document.getElementById(btn.dataset.copy).textContent.replace(/<\\\//g, '</');
+    var done = function () { var old = btn.dataset.label; btn.textContent = '已复制'; btn.classList.add('ok');
+      setTimeout(function () { btn.textContent = old; btn.classList.remove('ok'); }, 1600); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(src).then(done, function () { fallback(src); done(); });
+    } else { fallback(src); done(); }
+  });
+});
+function fallback(text) { var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+</script>
 </body></html>

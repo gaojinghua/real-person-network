@@ -12,6 +12,7 @@
 <h1>商业模式的重点是什么，投资人会怎么看？</h1>
 <p class="deck">早期只做抽佣，盯单位经济和供给留存。投资人会追问：为什么是现在、冷启动怎么做、能不能复制。</p>
 
+<div class="q-actions"><button type="button" class="copy-btn on-paint" data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button></div>
 </header>
 <main class="q-main">
 <details class="ask"><summary>原问题</summary><p>你觉得这个的商业模式上哪些是重点，如何从投资人角度去分析</p></details>
@@ -34,7 +35,48 @@
 <li><strong>能做多大。</strong> 宠物跑通后，同一套"活人分身加 AI 匹配"要能复制到母婴、装修、求医、留学。</li>
 </ol>
 <p><strong>两个要提前准备的质疑：</strong> "这不就是更好的在行吗？"答：那些是供给者自己上架，我们是 AI 替供给者建分身并主动匹配，进入成本差一个数量级。"AI 分身是不是噱头？"答：现阶段它的价值是降低录入门槛、做初筛，不是替代真人，是否核心要用数据回答。</p></article>
+<div class="copy-row"><button type="button" class="copy-btn " data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button><span>包含原问题、完整回答和来源链接，配图换成图注文字</span></div>
 <nav class="pn-row"><a class="pn prev" href="q04.html"><span>上一题</span>能解决信任的问题吗？</a><a class="pn next" href="q06.html"><span>下一题</span>给出建议</a></nav>
 </main>
 <footer>AI 原生真人服务网络：问题与分析 · 更新于 2026-10-28</footer>
+<script type="text/markdown" id="md-q">## 问题五：商业模式的重点是什么，投资人会怎么看？
+
+> **原问题：** 你觉得这个的商业模式上哪些是重点，如何从投资人角度去分析
+
+### 商业模式的重点
+
+- **收入来源早期只选一种。** 可选的有交易抽成、供给方付费、需求方会员。早期只做抽成，数据最诚实。
+- **生死指标是单位经济，不是 GMV。** 一单用户付多少、平台留多少、获客和人工花多少。早期一定亏，关键是随规模转正的路径说得清。
+- **供给方留存比需求方更重要。** 能让一个普通人每月稳定多赚两三千，模式就成立了一半。
+- **网络效应要被证明。** 供给越多匹配越准，用户越多供给越愿意来，而且这个飞轮不靠人工推。
+- **护城河靠时间堆。** 供给者分身和历史表现数据、用户需求历史、"急事找人靠谱"的品牌。
+
+*配图：网络效应的飞轮。投资人要看的是它能不能不靠人工推动。*
+
+### 投资人会问的六个问题
+
+1. **为什么是现在。** 过去让普通人把能力变成可被发现、可被定价的供给，要做号、做内容、做运营。现在 AI 替他做，门槛从"会做内容"降到"会说话"。
+2. **为什么是你。** 对目标人群和双边撮合的独特理解。
+3. **市场有多大。** 不报宠物市场总规模，要算"可以被线上连接和定价的服务"，再讲复制到其他垂类。
+4. **为什么大厂不做。** 内容、货架、店铺是它们的根基，让个人以活人身份被直接匹配，和它们的商业模型冲突。
+5. **冷启动怎么做。** 具体到城市、人数、渠道，最好已经手工跑过几十单。
+6. **能做多大。** 宠物跑通后，同一套"活人分身加 AI 匹配"要能复制到母婴、装修、求医、留学。
+
+**两个要提前准备的质疑：** "这不就是更好的在行吗？"答：那些是供给者自己上架，我们是 AI 替供给者建分身并主动匹配，进入成本差一个数量级。"AI 分身是不是噱头？"答：现阶段它的价值是降低录入门槛、做初筛，不是替代真人，是否核心要用数据回答。
+
+</script>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var src = document.getElementById(btn.dataset.copy).textContent.replace(/<\\\//g, '</');
+    var done = function () { var old = btn.dataset.label; btn.textContent = '已复制'; btn.classList.add('ok');
+      setTimeout(function () { btn.textContent = old; btn.classList.remove('ok'); }, 1600); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(src).then(done, function () { fallback(src); done(); });
+    } else { fallback(src); done(); }
+  });
+});
+function fallback(text) { var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+</script>
 </body></html>

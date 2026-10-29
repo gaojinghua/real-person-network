@@ -12,6 +12,7 @@
 <h1>这个方向是不是太大了？</h1>
 <p class="deck">愿景大是对的，第一步必须小到一句话说得清：谁、在什么时刻、付多少钱、谁来接。</p>
 
+<div class="q-actions"><button type="button" class="copy-btn on-paint" data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button></div>
 </header>
 <main class="q-main">
 <details class="ask"><summary>原问题</summary><p>这个方向是不是太大了</p></details>
@@ -24,7 +25,39 @@
 </ul>
 <p><strong>怎么缩小：</strong> 先想"一个自己会用、很快做得出来、能收到第一笔钱的东西"。只做一个场景，供给先手工找 20 个人，需求先在微信群或网页里跑，先验证两件事：用户愿不愿意为"快速连上一个对的人"付钱，这些人愿不愿意被这样定价和调度。</p>
 <p><strong>判断标准：</strong> 能不能用一句话说清楚，第一个用户是谁，他在什么时刻打开你，付多少钱，谁来接。说得清，大小就合适。</p></article>
+<div class="copy-row"><button type="button" class="copy-btn " data-copy="md-q" data-label="复制本题 Markdown">复制本题 Markdown</button><span>包含原问题、完整回答和来源链接，配图换成图注文字</span></div>
 <nav class="pn-row"><a class="pn prev" href="q02.html"><span>上一题</span>宠物赛道合不合适？</a><a class="pn next" href="q04.html"><span>下一题</span>能解决信任的问题吗？</a></nav>
 </main>
 <footer>AI 原生真人服务网络：问题与分析 · 更新于 2026-10-28</footer>
+<script type="text/markdown" id="md-q">## 问题三：这个方向是不是太大了？
+
+> **原问题：** 这个方向是不是太大了
+
+**结论：** 作为愿景，大是对的。作为第一步，它太大了。
+
+*配图：愿景层层收窄，直到第一单能用一句话说清。*
+
+- **双边网络冷启动。** 两边都是零，这是最难的创业形态之一。
+- **"任何需求"等于没有需求。** 挂号、跑腿、问答、买房咨询，供给、定价、履约、信任机制都不一样。
+- **宠物本身也是一个赛道，不是一个产品。** 问诊、寄养、上门、训练、殡葬，每个都是独立生意。
+
+**怎么缩小：** 先想"一个自己会用、很快做得出来、能收到第一笔钱的东西"。只做一个场景，供给先手工找 20 个人，需求先在微信群或网页里跑，先验证两件事：用户愿不愿意为"快速连上一个对的人"付钱，这些人愿不愿意被这样定价和调度。
+
+**判断标准：** 能不能用一句话说清楚，第一个用户是谁，他在什么时刻打开你，付多少钱，谁来接。说得清，大小就合适。
+
+</script>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var src = document.getElementById(btn.dataset.copy).textContent.replace(/<\\\//g, '</');
+    var done = function () { var old = btn.dataset.label; btn.textContent = '已复制'; btn.classList.add('ok');
+      setTimeout(function () { btn.textContent = old; btn.classList.remove('ok'); }, 1600); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(src).then(done, function () { fallback(src); done(); });
+    } else { fallback(src); done(); }
+  });
+});
+function fallback(text) { var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+</script>
 </body></html>
