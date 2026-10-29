@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>13 怎么用 AI 原生的方式，低成本地做好&quot;信任&quot;？</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<nav class="nav"><a class="brand" href="index.html"><i></i>真人服务网络 · 讨论记录</a>
+<div class="nav-right"><span class="nav-count">13 / 13</span><a class="pill dark" href="index.html#index">全部问题</a></div></nav>
+<header class="q-header">
+<p class="eyebrow-q"><span class="tag">问题 13</span>深入问题</p>
+<h1>怎么用 AI 原生的方式，低成本地做好&quot;信任&quot;？</h1>
+<p class="deck">信任拆成三层九个维度。能力用“针对具体任务”的方法核验，AI 把这些方法的成本降到接近零，信任就从一次性审核变成可积累的资产。</p>
+<div class="stats"><div class="stat"><b>约 47%</b><span>天鹅到家服务顾问人力成本占收入（2020，推算）</span></div><div class="stat"><b>.42 对 .07</b><span>结构化面试和工作年限的预测力</span></div><div class="stat"><b>83%</b><span>Rover 2022 年来自复购的预订占比</span></div></div>
+</header>
+<main class="q-main">
+<details class="ask"><summary>原问题</summary><p>我对这个产品主要的构想是这样的：需求侧可以承担主品牌心智：生活里有件事需要真人帮忙，来正好找合适的人，把事情安排清楚。供给侧则承载很重要的创新：不必经营一家店，也能把自己能做、愿意做的事变成收入。我现在其实最核心的是做好让用户怎么信任平台给他安排的这个人，我们需要将信任拆得更细（有哪些维度），本质上我们是一个让用户能够放心把事情交给平台来做的产品，不是抓用户的注意力。对于怎么做&quot;信任&quot;，能想到的传统做法感觉都是运营成本很高但也不能百分百保证的事情（例如一个人有资质并不能证明他就能服务得很好），我想用 AI native 的方法看看能不能降低做&quot;信任&quot;的成本，我觉得这才是我们这个企业持续有竞争力的根本。例如&quot;降低表达和经营要求，保留与具体任务相关的能力要求&quot;这种表述还是很模糊，怎么核验能力要求还是没有本质解决。当然我们最开始切入的时候也可以选择&quot;信任&quot;相对好做的领域，主要是把用户心智培养起来。请调研已有的这些平台都把精力和成本花在什么环节，收益如何，哪些地方值得改进，在 AI 驱动下哪些地方可以调整。</p></details>
+<article class="answer"><p><strong>结论：</strong></p>
+<ol>
+<li><strong>信任要拆成九个维度，分三层。</strong> 底线层是身份真实、没有恶意，只回答"能不能进门"。能力层是任务能力、可靠守约、沟通，要按具体任务、随每一单积累。机制层是过程可见、出事有兜底、隐私边界、约定清楚，由平台机制保证。三层用的证据完全不同，任何一张证书或一个星级都代替不了其他层。</li>
+<li><strong>现有平台的钱主要花在人工上，而回报最低的恰恰是用户最容易看到的那几样。</strong> 天鹅到家 2020 年服务顾问的人力成本约占收入的 47%，保险只占约 3%（按招股书推算） [1]。证书、一次性背调、公开星级、大额保障标题、保证金，看起来安全，实际拦不住问题。回报最高的是持续复核身份、把风险控制做进匹配、能快速换人退款、过程留痕、复购关系。</li>
+<li><strong>"任务相关能力"有答案。</strong> 人员选拔研究的最新修正显示，预测力最高的都是针对具体工作设计的方法：结构化面试、工作知识测验、工作样本、试工。工作年限、学历、证书几乎没有预测力 [2]。这些方法过去贵在要人来出题、施测、打分，AI 把这部分成本降到接近零 [3][4]。</li>
+<li><strong>这才是可以积累的竞争力。</strong> 传统平台的信任是"入口一次性审核，加人工兜底"，成本随规模线性增长。AI 原生的信任是"按任务持续积累证据"，每完成一单，平台对这个人在这类任务上的把握就多一分，单位成本随规模下降。</li>
+</ol>
+<h3>一、信任拆成九个维度</h3>
+<figure class="fig"><svg viewBox="0 0 740 300" role="img" aria-label="信任分三层九个维度" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b6b6b"/></marker></defs><rect x="20.0" y="20.0" width="700.0" height="76.0" rx="12" fill="#eaf0f9" stroke="#4d7fc4" stroke-width="1.6"/><text x="40.0" y="52.0" font-size="15" fill="#262626" text-anchor="start" font-weight="600">底线层</text><text x="40.0" y="74.0" font-size="12" fill="#6b6b6b" text-anchor="start" font-weight="400">能不能进门：过关或不过关</text><rect x="300.0" y="45.0" width="72.0" height="26.0" rx="13" fill="#eaf0f9" stroke="#4d7fc4" stroke-width="1.1"/><text x="336.0" y="62.5" font-size="13" fill="#262626" text-anchor="middle" font-weight="400">身份真实</text><rect x="380.0" y="45.0" width="72.0" height="26.0" rx="13" fill="#eaf0f9" stroke="#4d7fc4" stroke-width="1.1"/><text x="416.0" y="62.5" font-size="13" fill="#262626" text-anchor="middle" font-weight="400">没有恶意</text><rect x="20.0" y="112.0" width="700.0" height="76.0" rx="12" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.6"/><text x="40.0" y="144.0" font-size="15" fill="#262626" text-anchor="start" font-weight="600">能力层</text><text x="40.0" y="166.0" font-size="12" fill="#6b6b6b" text-anchor="start" font-weight="400">能不能做好：按任务、随每一单积累</text><rect x="300.0" y="137.0" width="72.0" height="26.0" rx="13" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.1"/><text x="336.0" y="154.5" font-size="13" fill="#262626" text-anchor="middle" font-weight="400">任务能力</text><rect x="380.0" y="137.0" width="72.0" height="26.0" rx="13" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.1"/><text x="416.0" y="154.5" font-size="13" fill="#262626" text-anchor="middle" font-weight="400">可靠守约</text><rect x="460.0" y="137.0" width="46.0" height="26.0" rx="13" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.1"/><text x="483.0" y="154.5" font-size="13" fill="#262626" text-anchor="middle" font-weight="400">沟通</text><rect x="20.0" y="204.0" width="700.0" height="76.0" rx="12" fill="#ffffff" stroke="#cfcfc6" stroke-width="1.2"/><text x="40.0" y="236.0" font-size="15" fill="#262626" text-anchor="start" font-weight="600">机制层</text><text x="40.0" y="258.0" font-size="12" fill="#6b6b6b" text-anchor="start" font-weight="400">出了问题怎么办：由平台机制保证</text><rect x="300.0" y="229.0" width="72.0" height="26.0" rx="13" fill="#ffffff" stroke="#cfcfc6" stroke-width="1.1"/><text x="336.0" y="246.5" font-size="13" fill="#262626" text-anchor="middle" font-weight="400">过程可见</text><rect x="380.0" y="229.0" width="85.0" height="26.0" rx="13" fill="#ffffff" stroke="#cfcfc6" stroke-width="1.1"/><text x="422.5" y="246.5" font-size="13" fill="#262626" text-anchor="middle" font-weight="400">出事有兜底</text><rect x="473.0" y="229.0" width="72.0" height="26.0" rx="13" fill="#ffffff" stroke="#cfcfc6" stroke-width="1.1"/><text x="509.0" y="246.5" font-size="13" fill="#262626" text-anchor="middle" font-weight="400">隐私边界</text><rect x="553.0" y="229.0" width="72.0" height="26.0" rx="13" fill="#ffffff" stroke="#cfcfc6" stroke-width="1.1"/><text x="589.0" y="246.5" font-size="13" fill="#262626" text-anchor="middle" font-weight="400">约定清楚</text></svg><figcaption>三层用的证据完全不同，任何一张证书或一个星级都代替不了其他层。</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>层</th>
+<th>维度</th>
+<th>用户在担心什么</th>
+<th>需要什么证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>底线</td>
+<td>身份真实</td>
+<td>来的是不是平台介绍的那个人；超过八成希望扫码核实身份 [5]</td>
+<td>活体核验加每次上门前现场复核</td>
+</tr>
+<tr>
+<td>底线</td>
+<td>没有恶意</td>
+<td>偷东西、伤害、越界；Care.com 家长把背景调查排第一 [6]</td>
+<td>背景核查作为底线，加按单风险评估</td>
+</tr>
+<tr>
+<td>能力</td>
+<td>任务能力</td>
+<td>能不能把这件具体的事做好；50.81% 遇到过"专业性不足、需要反复指导" [5]</td>
+<td>按任务的面试、测验、工作样本、小单试工</td>
+</tr>
+<tr>
+<td>能力</td>
+<td>可靠守约</td>
+<td>按指示做、准时、不消失；宠物主投诉"不按指示照顾"占 35%，"独留太久"占 32% [7]</td>
+<td>每单的准时率、按清单完成率、改约率</td>
+</tr>
+<tr>
+<td>能力</td>
+<td>沟通</td>
+<td>能不能把情况说清楚；宠物主投诉"沟通差"占 27% [7]</td>
+<td>模拟沟通考核，加每单回报质量</td>
+</tr>
+<tr>
+<td>机制</td>
+<td>过程可见</td>
+<td>人在外地不知道发生了什么</td>
+<td>打卡、定位、带时间地点凭证的照片和视频，AI 汇总</td>
+</tr>
+<tr>
+<td>机制</td>
+<td>出事有兜底</td>
+<td>40.27% 担心意外时责任划分不清 [5]</td>
+<td>按单保险、平台先赔、过程证据快速定责</td>
+</tr>
+<tr>
+<td>机制</td>
+<td>隐私边界</td>
+<td>18.31% 因隐私顾虑不用上门服务 [5]</td>
+<td>虚拟号码、平台内沟通、资料到期删除</td>
+</tr>
+<tr>
+<td>机制</td>
+<td>约定清楚</td>
+<td>超过五成最关注价格透明，32.7% 遇到合同模糊 [5]</td>
+<td>AI 把需求变成结构化任务单和报价，双方确认后作为验收标准</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一个关键依据：</strong> 信任研究的经典模型强调，能力是"针对具体任务和情境的" [8]。一个人会喂猫，不代表会给猫喂药。所以能力档案必须按任务记，不能只给一个总分。</p>
+<h3>二、现有平台把钱花在哪，回报如何</h3>
+<figure class="fig"><svg viewBox="0 0 740 394" role="img" aria-label="信任投入的回报：低投入高回报的环节应优先做" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b6b6b"/></marker></defs><text x="410.0" y="24.0" font-size="12.5" fill="#6b6b6b" text-anchor="middle" font-weight="400">已知投入 →</text><text x="34" y="200.0" font-size="12.5" fill="#6b6b6b" transform="rotate(-90 34 200.0)" text-anchor="middle">回报 →</text><rect x="110.0" y="40.0" width="300.0" height="160.0" rx="12" fill="#f3f8f2" stroke="#1e7a3c" stroke-width="1.6"/><rect x="410.0" y="40.0" width="300.0" height="160.0" rx="12" fill="#ffffff" stroke="#cfcfc6" stroke-width="1.2"/><rect x="110.0" y="200.0" width="300.0" height="160.0" rx="12" fill="#ffffff" stroke="#cfcfc6" stroke-width="1.2"/><rect x="410.0" y="200.0" width="300.0" height="160.0" rx="12" fill="#ffffff" stroke="#cfcfc6" stroke-width="1.2"/><text x="124.0" y="62.0" font-size="12.5" fill="#1e7a3c" text-anchor="start" font-weight="600">低投入、高回报：优先做</text><text x="424.0" y="62.0" font-size="12.5" fill="#6b6b6b" text-anchor="start" font-weight="600">高投入、高回报</text><text x="124.0" y="222.0" font-size="12.5" fill="#6b6b6b" text-anchor="start" font-weight="600">低投入、低回报</text><text x="424.0" y="222.0" font-size="12.5" fill="#6b6b6b" text-anchor="start" font-weight="600">高投入、低回报：少做</text><rect x="124.0" y="80.0" width="70.0" height="26.0" rx="13" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.1"/><text x="159.0" y="97.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">小额先赔</text><rect x="202.0" y="80.0" width="107.5" height="26.0" rx="13" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.1"/><text x="255.8" y="97.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">复购与私下评价</text><rect x="124.0" y="114.0" width="95.0" height="26.0" rx="13" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.1"/><text x="171.5" y="131.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">快速换人退款</text><rect x="227.0" y="114.0" width="95.0" height="26.0" rx="13" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.1"/><text x="274.5" y="131.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">持续复核身份</text><rect x="424.0" y="80.0" width="82.5" height="26.0" rx="13" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.1"/><text x="465.2" y="97.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">风险进匹配</text><rect x="514.5" y="80.0" width="70.0" height="26.0" rx="13" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.1"/><text x="549.5" y="97.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">过程留痕</text><rect x="124.0" y="240.0" width="70.0" height="26.0" rx="13" fill="#eaf0f9" stroke="#4d7fc4" stroke-width="1.1"/><text x="159.0" y="257.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">公开星级</text><rect x="202.0" y="240.0" width="95.0" height="26.0" rx="13" fill="#eaf0f9" stroke="#4d7fc4" stroke-width="1.1"/><text x="249.5" y="257.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">大额保障标题</text><rect x="424.0" y="240.0" width="107.5" height="26.0" rx="13" fill="#eaf0f9" stroke="#4d7fc4" stroke-width="1.1"/><text x="477.8" y="257.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">人工撮合与客服</text><rect x="539.5" y="240.0" width="107.5" height="26.0" rx="13" fill="#eaf0f9" stroke="#4d7fc4" stroke-width="1.1"/><text x="593.2" y="257.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">一次性准入审核</text><rect x="424.0" y="274.0" width="82.5" height="26.0" rx="13" fill="#eaf0f9" stroke="#4d7fc4" stroke-width="1.1"/><text x="465.2" y="291.5" font-size="12.5" fill="#262626" text-anchor="middle" font-weight="400">保证金押金</text><text x="710.0" y="382.0" font-size="11.5" fill="#6b6b6b" text-anchor="end" font-weight="400">位置为定性判断，依据见下方表格</text></svg><figcaption>回报最高的环节，多数投入并不大。</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>环节</th>
+<th>典型做法</th>
+<th>已知投入</th>
+<th>效果</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人工撮合和客服</td>
+<td>顾问筛人、面试、签约、售后</td>
+<td>天鹅到家顾问人力约占收入 47%，另有外包顾问和客服 3,288 人 [1]；Rover 运营与支持占收入 15% [9]；Airbnb 占 11% [10]</td>
+<td>投诉和恶性事件仍在发生 [11]</td>
+<td>成本大头，最该被 AI 替代</td>
+</tr>
+<tr>
+<td>一次性准入审核</td>
+<td>背调、证书、体检、培训</td>
+<td>美国背调每份约 30 到 95 美元 [12]</td>
+<td>门店交 1,500 元可买 3 个证 [13]；简历由本人自填 [14]；Rover 承认审核后不复查 [9]；没有任何平台公开过背调拦住了多少事故</td>
+<td>必要的底线，但"看起来安全"</td>
+</tr>
+<tr>
+<td>持续复核和风控进匹配</td>
+<td>定期复查、自拍复核、按风险派单</td>
+<td>滴滴 2019 年安全投入约占收入 1.3%（推算）[15]</td>
+<td>滴滴最快 1 到 2 周复查，累计隔离 150 万风险司机 [16]；DoorDash 自拍复核每周拦截 1.5 万名不合格者 [17]；Uber 风险匹配使相关报告率降 10% [18]</td>
+<td>回报高</td>
+</tr>
+<tr>
+<td>快速换人和退款</td>
+<td>不满意就换</td>
+<td>天鹅到家设专门换人团队 [1]</td>
+<td>改为无限次换人后，保姆服务退款率降到约 10% [1]</td>
+<td>回报高</td>
+</tr>
+<tr>
+<td>过程留痕</td>
+<td>录音、轨迹、照片</td>
+<td>货拉拉承诺 2 年投入 6 亿元做安全 [19]</td>
+<td>滴滴刑事案件破案率 100% [20]；但每天约 20 万单偏航预警里真正有问题的只有个位数 [21]；啄木鸟全程录音加 AI，仍因乱收费被 3·15 点名 [22]</td>
+<td>回报高，但要降噪，而且解决不了激励错位</td>
+</tr>
+<tr>
+<td>保证金和押金</td>
+<td>向供给方收钱</td>
+<td>啄木鸟年末押金 1.138 亿元，当年投诉赔偿只有 58.6 万元，约 194 倍（推算）[23]；猫巷收 99 元认证费加 500 元保证金 [24]</td>
+<td>主要在锁住供给，真正用来赔用户的很少</td>
+<td>回报低，还抬高门槛</td>
+</tr>
+<tr>
+<td>大额保障标题</td>
+<td>宣传高保额</td>
+<td>Thumbtack 从宣传 100 万美元降到 10 万美元 [25]；TaskRabbit 从 1 万美元降到 1,000 美元，且"酌情"赔付 [26]</td>
+<td>实际赔付额各家都没公开</td>
+<td>标题作用大于实际作用</td>
+</tr>
+<tr>
+<td>小额先赔</td>
+<td>平台先赔再追责</td>
+<td>啄木鸟年赔付只占交易额约 0.02%（推算）[23]</td>
+<td>成本很低，用户感知很强</td>
+<td>回报高</td>
+</tr>
+<tr>
+<td>公开星级</td>
+<td>五星评价</td>
+<td>Rover 有评价的订单 97% 是 5 星 [9]；某劳务平台满分比例 6 年从 33% 升到 85% [27]</td>
+<td>几乎没有区分度</td>
+<td>回报低</td>
+</tr>
+<tr>
+<td>复购和私下评价</td>
+<td>展示回头客、私密评分</td>
+<td>Rover 2022 年 83% 的预订来自复购 [9]；TaskRabbit 推出不公开的满意度评分 [26]</td>
+<td>比星级难膨胀，信息量高</td>
+<td>回报高</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>国内用户最在意的不是资质。</strong> 选家政时最关注价格透明的超过五成，关注资质认证的只有 19.19% [5]。2025 年全国消费投诉里，售后服务问题占比最高，为 27.68% [28]。</p>
+<p><strong>AI 已经在这些环节见效。</strong> Airbnb 的 AI 客服处理的问题里约 45% 不需要人工，每笔预订的客服成本同比下降约 16% [10]。滴滴用大模型自动给取消和费用纠纷定责 [29]。大众点评用 AI 审评价，近 60% 的违规在机审环节被拦下 [30]。</p>
+<h3>三、"任务相关能力"到底怎么核验</h3>
+<p><strong>先看研究结论。</strong> 下表是人员选拔领域三份元分析给出的预测力，数字越高，越能预测一个人以后做得好不好 [2]。</p>
+<figure class="fig"><svg viewBox="0 0 740 378" role="img" aria-label="针对具体任务的核验方法预测力最高，学历和年限几乎无效" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b6b6b"/></marker></defs><text x="20.0" y="24.0" font-size="12.5" fill="#6b6b6b" text-anchor="start" font-weight="400">预测“以后做得好不好”的能力（相关系数，越高越准）</text><text x="158.0" y="61.0" font-size="13" fill="#262626" text-anchor="end" font-weight="400">试工、试用期</text><rect x="170" y="47" width="440.0" height="20" rx="4" fill="#1e7a3c"><title>试工、试用期：0.44（1998 年数据）</title></rect><text x="618.0" y="62.0" font-size="12" fill="#262626" text-anchor="start" font-weight="400">.44（1998 年数据）</text><text x="158.0" y="95.0" font-size="13" fill="#262626" text-anchor="end" font-weight="400">结构化面试</text><rect x="170" y="81" width="420.0" height="20" rx="4" fill="#1e7a3c"><title>结构化面试：0.42</title></rect><text x="598.0" y="96.0" font-size="12" fill="#262626" text-anchor="start" font-weight="400">.42</text><text x="158.0" y="129.0" font-size="13" fill="#262626" text-anchor="end" font-weight="400">工作知识测验</text><rect x="170" y="115" width="400.0" height="20" rx="4" fill="#1e7a3c"><title>工作知识测验：0.40</title></rect><text x="578.0" y="130.0" font-size="12" fill="#262626" text-anchor="start" font-weight="400">.40</text><text x="158.0" y="163.0" font-size="13" fill="#262626" text-anchor="end" font-weight="400">工作样本</text><rect x="170" y="149" width="330.0" height="20" rx="4" fill="#1e7a3c"><title>工作样本：0.33</title></rect><text x="508.0" y="164.0" font-size="12" fill="#262626" text-anchor="start" font-weight="400">.33</text><text x="158.0" y="197.0" font-size="13" fill="#262626" text-anchor="end" font-weight="400">情境判断测验</text><rect x="170" y="183" width="260.0" height="20" rx="4" fill="#1e7a3c"><title>情境判断测验：0.26</title></rect><text x="438.0" y="198.0" font-size="12" fill="#262626" text-anchor="start" font-weight="400">.26</text><text x="158.0" y="231.0" font-size="13" fill="#262626" text-anchor="end" font-weight="400">非结构化面试</text><rect x="170" y="217" width="190.0" height="20" rx="4" fill="#4d7fc4"><title>非结构化面试：0.19</title></rect><text x="368.0" y="232.0" font-size="12" fill="#262626" text-anchor="start" font-weight="400">.19</text><text x="158.0" y="265.0" font-size="13" fill="#262626" text-anchor="end" font-weight="400">学历</text><rect x="170" y="251" width="100.0" height="20" rx="4" fill="#4d7fc4"><title>学历：0.10（1998 年数据）</title></rect><text x="278.0" y="266.0" font-size="12" fill="#262626" text-anchor="start" font-weight="400">.10（1998 年数据）</text><text x="158.0" y="299.0" font-size="13" fill="#262626" text-anchor="end" font-weight="400">工作年限</text><rect x="170" y="285" width="70.0" height="20" rx="4" fill="#4d7fc4"><title>工作年限：0.07</title></rect><text x="248.0" y="300.0" font-size="12" fill="#262626" text-anchor="start" font-weight="400">.07</text><text x="158.0" y="333.0" font-size="13" fill="#262626" text-anchor="end" font-weight="400">证书</text><text x="170.0" y="334.0" font-size="12" fill="#6b6b6b" text-anchor="start" font-weight="400">元分析未单列；执照研究多次发现不提高服务质量</text><rect x="170.0" y="352.0" width="12.0" height="12.0" rx="2" fill="#1e7a3c" stroke="#1e7a3c" stroke-width="0"/><text x="188.0" y="362.0" font-size="12" fill="#262626" text-anchor="start" font-weight="400">针对具体任务的方法</text><rect x="330.0" y="352.0" width="12.0" height="12.0" rx="2" fill="#4d7fc4" stroke="#4d7fc4" stroke-width="0"/><text x="348.0" y="362.0" font-size="12" fill="#262626" text-anchor="start" font-weight="400">一般性指标</text><text x="730.0" y="362.0" font-size="11.5" fill="#6b6b6b" text-anchor="end" font-weight="400">来源：Sackett 等 2022 修正</text></svg><figcaption>预测力最高的都是针对具体任务的方法；学历、年限、证书几乎没有预测力。</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>预测力（2022 修正）</th>
+<th>过去的成本</th>
+<th>AI 之后的成本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>试工、试用期</td>
+<td>.44（1998 年数据）</td>
+<td>高，要人盯</td>
+<td>中，过程数据自动产生</td>
+</tr>
+<tr>
+<td>结构化面试</td>
+<td>.42</td>
+<td>高，要培训面试官</td>
+<td>很低，AI 语音面试加自动评分</td>
+</tr>
+<tr>
+<td>工作知识测验</td>
+<td>.40</td>
+<td>中，要出题</td>
+<td>很低，AI 按任务出题和评分</td>
+</tr>
+<tr>
+<td>工作样本</td>
+<td>.33</td>
+<td>高，要现场考核</td>
+<td>中，拍视频或 AI 模拟</td>
+</tr>
+<tr>
+<td>情境判断测验</td>
+<td>.26</td>
+<td>中</td>
+<td>很低</td>
+</tr>
+<tr>
+<td>非结构化面试</td>
+<td>.19</td>
+<td>中</td>
+<td>不建议用</td>
+</tr>
+<tr>
+<td>学历</td>
+<td>.10（1998 年数据）</td>
+<td>低</td>
+<td>不用来判断能力</td>
+</tr>
+<tr>
+<td>工作年限</td>
+<td>.07</td>
+<td>低</td>
+<td>不用来判断能力</td>
+</tr>
+<tr>
+<td>证书</td>
+<td>元分析未单列；执照研究多次发现不提高服务质量 [31][32]</td>
+<td>低</td>
+<td>只作展示信号</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>AI 能把前几项的成本降下来，已有证据：</strong></p>
+<ul>
+<li>一项 7 万多人的随机实验里，AI 语音面试组的录用率高 12%，留存高 18%，录用者的生产率没有下降；让应聘者自己选时，78% 选了 AI 面试 [3]。</li>
+<li>2026 年的研究显示，用大模型给面试打分，质量可以和单个人工评分员相当或更好 [4]。</li>
+<li>一个要注意的坑：评分要锚定在"可观察的任务行为"上。用自我描述训练的模型几乎没有信度 [2]。</li>
+</ul>
+<p><strong>落到产品上，就是"先教、再考、做一次、小单试、持续看"五步：</strong></p>
+<figure class="fig"><svg viewBox="0 0 740 180" role="img" aria-label="任务能力核验五步：先教、再考、做一次、小单试、持续看" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b6b6b"/></marker></defs><rect x="33.0" y="41.5" width="114.0" height="57.0" rx="10" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.8"/><text x="90.0" y="66.5" font-size="14" fill="#262626" text-anchor="middle" font-weight="600">先教</text><text x="90.0" y="84.5" font-size="12" fill="#6b6b6b" text-anchor="middle" font-weight="400">10 到 20 分钟短训</text><rect x="174.9" y="41.5" width="110.2" height="57.0" rx="10" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.8"/><text x="230.0" y="66.5" font-size="14" fill="#262626" text-anchor="middle" font-weight="600">再考</text><text x="230.0" y="84.5" font-size="12" fill="#6b6b6b" text-anchor="middle" font-weight="400">AI 面试和测验</text><rect x="313.0" y="41.5" width="114.0" height="57.0" rx="10" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.8"/><text x="370.0" y="66.5" font-size="14" fill="#262626" text-anchor="middle" font-weight="600">做一次</text><text x="370.0" y="84.5" font-size="12" fill="#6b6b6b" text-anchor="middle" font-weight="400">工作样本或模拟</text><rect x="453.0" y="41.5" width="114.0" height="57.0" rx="10" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.8"/><text x="510.0" y="66.5" font-size="14" fill="#262626" text-anchor="middle" font-weight="600">小单试</text><text x="510.0" y="84.5" font-size="12" fill="#6b6b6b" text-anchor="middle" font-weight="400">低风险首单留证</text><rect x="593.0" y="41.5" width="114.0" height="57.0" rx="10" fill="#e8f2ea" stroke="#1e7a3c" stroke-width="1.8"/><text x="650.0" y="66.5" font-size="14" fill="#262626" text-anchor="middle" font-weight="600">持续看</text><text x="650.0" y="84.5" font-size="12" fill="#6b6b6b" text-anchor="middle" font-weight="400">每单更新能力分</text><line x1="150.0" y1="70.0" x2="170.9" y2="70.0" stroke="#6b6b6b" stroke-width="1.4" marker-end="url(#ah)"/><line x1="288.1" y1="70.0" x2="309.0" y2="70.0" stroke="#6b6b6b" stroke-width="1.4" marker-end="url(#ah)"/><line x1="430.0" y1="70.0" x2="449.0" y2="70.0" stroke="#6b6b6b" stroke-width="1.4" marker-end="url(#ah)"/><line x1="570.0" y1="70.0" x2="589.0" y2="70.0" stroke="#6b6b6b" stroke-width="1.4" marker-end="url(#ah)"/><path d="M650 102 v34 h-140 v-26" fill="none" stroke="#6b6b6b" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="5 4"/><text x="370.0" y="166.0" font-size="12.5" fill="#6b6b6b" text-anchor="middle" font-weight="400">表现稳定就解锁更高风险的任务；表现下滑就回到小单</text></svg><figcaption>任务能力核验五步，结果按任务类型记录，不汇总成一个总分。</figcaption></figure>
+<ol>
+<li><strong>先教。</strong> 按任务做 10 到 20 分钟的短训，比如喂猫的防逃规程、陪诊的医疗边界。研究指出，知识测验和工作样本对新手要"先培训再测" [2]，这正适合普通人供给。</li>
+<li><strong>再考。</strong> AI 语音面试只问两类问题："讲一次你当时是怎么做的"和"如果遇到这种情况你会怎么做"，不问资历。配上知识小测和情境判断题，全部由 AI 评分。</li>
+<li><strong>做一次。</strong> 交一段工作样本。比如拍视频演示一次完整的上门喂猫流程；或者由 AI 扮演焦急的家属，考你怎么转述医嘱，转述准确度可以逐条比对。</li>
+<li><strong>小单试。</strong> 先接低风险的首单，配全程过程证据。在线劳动市场的实验证明，给新人一单并公开详细评价，能显著改善他们后来的就业 [33]。</li>
+<li><strong>持续看。</strong> 每单的准时率、清单完成率、过程证据质量、私下回访和复购，持续更新这个人"在这类任务上"的能力分。</li>
+</ol>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>环节</th>
+<th>宠物上门照看</th>
+<th>陪诊</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>先教</td>
+<td>防逃规程、禁食清单、应激和急症识别</td>
+<td>目标医院的流程、医疗边界（不解读报告、不给医疗建议）、隐私规则</td>
+</tr>
+<tr>
+<td>再考</td>
+<td>"猫一整天没吃东西，你会怎么做？"</td>
+<td>"医生说的话老人没听懂，你怎么转述？"</td>
+</tr>
+<tr>
+<td>做一次</td>
+<td>拍视频演示开门防逃、喂食、换水、铲屎、拍照回报</td>
+<td>AI 扮演医生和家属，考转述医嘱和应对追问</td>
+</tr>
+<tr>
+<td>小单试</td>
+<td>先接短时、单猫、无病史的单</td>
+<td>先接复诊开药，再接检查多、需要判断的就诊</td>
+</tr>
+<tr>
+<td>持续看</td>
+<td>每次的照片视频、清单完成、主人私下回访</td>
+<td>医嘱记录准确度、准时、家属回访、慢病患者是否固定找他</td>
+</tr>
+</tbody>
+</table></div>
+<p>这就把"降低表达和经营要求，保留与具体任务相关的能力要求"变成了可执行的流程：<strong>不看你会不会包装自己、有没有店和证，只看你能不能把这一类任务做好；而"能不能做好"由 AI 考核和小单试来证明，由每一单的证据持续更新。</strong></p>
+<h3>四、AI 原生的信任系统：每个维度怎么做</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>传统做法</th>
+<th>问题</th>
+<th>AI 原生做法</th>
+<th>成本判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>身份真实</td>
+<td>身份证、一次人脸比对</td>
+<td>深度伪造正在削弱单一人脸核验 [34]</td>
+<td>注册时活体加防注入检测；每次上门前现场自拍复核；用户扫码核身</td>
+<td>低</td>
+</tr>
+<tr>
+<td>没有恶意</td>
+<td>无犯罪记录、背调</td>
+<td>只能查到已有记录，预测不了表现 [35]</td>
+<td>背调作为底线；对接商务部"家政信用查"等公共数据 [36]；按单风险评估</td>
+<td>中</td>
+</tr>
+<tr>
+<td>任务能力</td>
+<td>证书、经验年限</td>
+<td>几乎没有预测力</td>
+<td>上面的五步流程，按任务记能力分</td>
+<td>低到中</td>
+</tr>
+<tr>
+<td>可靠守约</td>
+<td>公开星级、主管观察</td>
+<td>星级膨胀，主管不愿淘汰人 [2]</td>
+<td>每单过程数据、私下回访、复购率</td>
+<td>低</td>
+</tr>
+<tr>
+<td>沟通</td>
+<td>面试印象</td>
+<td>非结构化面试预测力只有 .19</td>
+<td>AI 角色扮演考核，加每单回报质量</td>
+<td>低</td>
+</tr>
+<tr>
+<td>过程可见</td>
+<td>用户自己问</td>
+<td>全靠服务者自觉</td>
+<td>参照美国居家护理的电子到访核验，记录服务类型、对象、日期、地点、服务者、起止时间 [37]；照片带时间地点凭证；AI 核对清单</td>
+<td>低</td>
+</tr>
+<tr>
+<td>出事有兜底</td>
+<td>年度保险、员工制</td>
+<td>碎片订单覆盖率低，定责难</td>
+<td>按单保险，国内已有每单 3 到 5 元的产品 [38]；过程证据快速定责；平台先赔</td>
+<td>每单几元</td>
+</tr>
+<tr>
+<td>隐私边界</td>
+<td>口头约定</td>
+<td>病历泄露等案例 [39]</td>
+<td>虚拟号码、平台内沟通、隐私规则考核、资料到期删除</td>
+<td>低</td>
+</tr>
+<tr>
+<td>约定清楚</td>
+<td>合同</td>
+<td>价格和范围模糊</td>
+<td>AI 生成任务单和报价，双方确认后作为验收标准</td>
+<td>低</td>
+</tr>
+</tbody>
+</table></div>
+<h3>五、对我们的启示</h3>
+<ol>
+<li><strong>不在"一次性审核"上和大平台拼投入。</strong> 把钱花在回报最高的四件事上：持续核验身份、按任务核验能力、过程证据、快速兜底（换人加先赔）。</li>
+<li><strong>不向供给方收认证费和保证金。</strong> 这和"不必经营一家店也能赚钱"的供给侧定位直接冲突，而且数据显示它主要在锁供给，不在保护用户。</li>
+<li><strong>激励要对。</strong> 啄木鸟有全程录音加 AI 监控，但抽成约 35% 到 40%，仍然出现乱收费 [22]。监控解决不了激励错位，抽成和定价规则本身就是信任设计的一部分。</li>
+<li><strong>证书只作展示，不作判断。</strong> 用户仍然看重它，约一半宠物主愿为有兽医背景或执照的人多付钱 [7]，所以可以作为加分信号展示，但不进入能力分。</li>
+<li><strong>信任证据是我们的壁垒。</strong> 大平台按品类派单，拿不到"这个人在这类任务上做得怎样"的细粒度证据。我们每完成一单，都在积累别人拿不走的东西。</li>
+</ol>
+<h3>六、先从信任好做的领域切入</h3>
+<p>信任好不好做，看四个因素：底线风险高不高、能力好不好考、过程好不好留证、出了事损失大不大。</p>
+<figure class="fig"><svg viewBox="0 0 740 200" role="img" aria-label="先从信任易做的非标跑腿和宠物上门切入" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b6b6b"/></marker></defs><line x1="60" y1="120" x2="680" y2="120" stroke="#262626" stroke-width="1.4" marker-end="url(#ah)"/><text x="60.0" y="150.0" font-size="12" fill="#6b6b6b" text-anchor="start" font-weight="400">信任易做</text><text x="680.0" y="150.0" font-size="12" fill="#6b6b6b" text-anchor="end" font-weight="400">信任难做</text><circle cx="84.8" cy="120" r="7" fill="#1e7a3c" stroke="#fdfff7" stroke-width="2"><title>非标跑腿</title></circle><text x="84.8" y="102.0" font-size="13" fill="#262626" text-anchor="middle" font-weight="600">非标跑腿</text><circle cx="221.2" cy="120" r="7" fill="#1e7a3c" stroke="#fdfff7" stroke-width="2"><title>宠物上门</title></circle><text x="221.2" y="102.0" font-size="13" fill="#262626" text-anchor="middle" font-weight="600">宠物上门</text><circle cx="370.0" cy="120" r="7" fill="#4d7fc4" stroke="#fdfff7" stroke-width="2"><title>做饭、收纳</title></circle><text x="370.0" y="102.0" font-size="13" fill="#262626" text-anchor="middle" font-weight="600">做饭、收纳</text><circle cx="494.0" cy="120" r="7" fill="#4d7fc4" stroke="#fdfff7" stroke-width="2"><title>陪诊</title></circle><text x="494.0" y="102.0" font-size="13" fill="#262626" text-anchor="middle" font-weight="600">陪诊</text><circle cx="636.6" cy="120" r="7" fill="#4d7fc4" stroke="#fdfff7" stroke-width="2"><title>老人陪伴、带娃</title></circle><text x="636.6" y="102.0" font-size="13" fill="#262626" text-anchor="middle" font-weight="600">老人陪伴、带娃</text><path d="M60.0 66 v-10 h223.2 v10" fill="none" stroke="#1e7a3c" stroke-width="1.4"/><text x="171.6" y="46.0" font-size="12.5" fill="#1e7a3c" text-anchor="middle" font-weight="600">先从这里切入，养成心智</text><text x="60.0" y="180.0" font-size="12" fill="#6b6b6b" text-anchor="start" font-weight="400">四个因素：底线风险、能力好不好考、过程好不好留证、出事损失大小</text></svg><figcaption>先用信任易做的品类养成心智，同时跑通核验流程。</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>品类</th>
+<th>底线风险</th>
+<th>能力好不好考</th>
+<th>过程好不好留证</th>
+<th>出事损失</th>
+<th>信任难度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>非标跑腿代办</td>
+<td>低，多数不进家门</td>
+<td>好考</td>
+<td>好留证</td>
+<td>小</td>
+<td>易</td>
+</tr>
+<tr>
+<td>宠物上门照看</td>
+<td>中，要进家门</td>
+<td>好考，流程固定</td>
+<td>好留证，拍照拍视频</td>
+<td>中</td>
+<td>中偏易</td>
+</tr>
+<tr>
+<td>上门做饭、整理收纳</td>
+<td>中，要进家门</td>
+<td>中，口味和习惯主观</td>
+<td>中</td>
+<td>小</td>
+<td>中</td>
+</tr>
+<tr>
+<td>陪诊</td>
+<td>中，接触老人和病历</td>
+<td>中，医院流程差异大</td>
+<td>中，医院内难拍</td>
+<td>中</td>
+<td>中偏难</td>
+</tr>
+<tr>
+<td>老人陪伴、临时带娃</td>
+<td>高，面对弱势人群</td>
+<td>难，靠责任心</td>
+<td>难，长时间相处</td>
+<td>大</td>
+<td>难</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>建议：</strong> 用非标跑腿代办和宠物上门照看先养成"有事找我们"的心智，同时把五步核验流程和过程证据跑通。陪诊、老人陪伴、带娃等信任证据积累够了再开。</p>
+<h3>七、还不确定、要用前 100 单验证的</h3>
+<ul>
+<li><strong>没有平台公开过背调到底拦住了多少事故，也没有公开过保障的实际赔付额。</strong> 我们要自己记录每个环节拦下了多少人、多少问题。</li>
+<li><strong>AI 面试的大规模证据来自客服岗，不是上门服务。</strong> 需要在我们的场景里验证 AI 能力分和真实履约表现的相关性。</li>
+<li><strong>"先接低风险单、再逐步解锁"在家政和上门服务里没有找到直接研究。</strong> 只有在线劳动市场的间接证据。</li>
+<li><strong>陪诊国标对个人接单的要求还没核实原文。</strong> 这影响陪诊能不能由普通人来做。</li>
+</ul>
+<h3>来源</h3>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1798255/000119312521207533/d143830df1.htm">天鹅到家上市招股书，美国证监会，2021-07-02</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A20984B138319E3D432E643978BF026D/S175494262300024Xa.pdf/revisiting_the_design_of_selection_systems_in_light_of_new_findings_regarding_the_validity_of_widely_used_predictors.pdf">Sackett 等，选拔方法效度的修正，Industrial and Organizational Psychology，2023</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cirje.e.u-tokyo.ac.jp/research/workshops/emf/paper2026/emf0629_Henkel.pdf">Jabarian 与 Henkel，AI 语音面试 7 万人实验，2026-01</a></li>
+<li><a target="_blank" rel="noopener" href="https://api.openalex.org/works/doi:10.1037/apl0001396">Stockdale 等，大模型面试评分质量，Journal of Applied Psychology，2026</a></li>
+<li><a target="_blank" rel="noopener" href="https://zxb.ccn.com.cn/html/zxb/20260508/137800.html">中国消费者报，上海闵行区家政服务消费调查，2026-05-08</a></li>
+<li><a target="_blank" rel="noopener" href="http://web.archive.org/web/20260609085632/https://www.care.com/c/hiring-a-babysitter-challenging-survey/">Care.com 保姆调查，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.metlifepetinsurance.com/pet-sitter-trust-index/">MetLife 宠物托管信任指数，2025-08-05</a></li>
+<li><a target="_blank" rel="noopener" href="https://people.wku.edu/richard.miller/Mayer%20Trust%20article.pdf">Mayer、Davis、Schoorman，组织信任整合模型，1995</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1826018/000182601823000015/rovr-20221231.htm">Rover 2022 年报，美国证监会，2023-03-09</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1559720/000119312526337928/d70413dex991.htm">Airbnb 2026 年第二季度股东信，2026-08-06</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.sina.com.cn/jjxw/2025-11-22/doc-infyhpxe5947220.shtml">新浪财经，家政平台虐待事件，2025-11-22</a></li>
+<li><a target="_blank" rel="noopener" href="https://checkr.com/pricing">Checkr 定价页</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.sina.cn/2023-11-16/detail-imzuvtcf1114755.d.html">江苏省消保委家政调查，新浪，2023-11-16</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jiemian.com/article/6710535.html">界面新闻，天鹅到家阿姨简历自填，2021-10-17</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1764757/000104746921001221/a2243298zf-1a.htm">滴滴上市招股书，美国证监会，2021-06-28</a></li>
+<li><a target="_blank" rel="noopener" href="https://m.thepaper.cn/newsDetail_forward_24432352">澎湃新闻，滴滴背景审核体系，2023-08-31</a></li>
+<li><a target="_blank" rel="noopener" href="https://about.doordash.com/en-us/news/doordash-further-strengthens-safeguards-against-account-sharing">DoorDash 加强身份复核，2024-12-12</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.uber.com/us/en/newsroom/ubers-safety-record/">Uber 安全记录，2025-08-06</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.sina.com.cn/chanjing/gsnews/2021-03-30/doc-ikknscsk4535155.shtml">新浪财经，货拉拉安全投入承诺，2021-03-30</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jiemian.com/article/3249755.html">界面新闻，滴滴安全透明度报告，2019-06-25</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.geekpark.net/news/244150">极客公园，滴滴安全预警的误报，2019-07-02</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.sina.com.cn/stock/bxjj/2025-03-15/doc-ineptxhm5593923.shtml">新浪财经，3·15 点名啄木鸟，2025-03-15</a></li>
+<li><a target="_blank" rel="noopener" href="https://web.archive.org/web/20250319123722/https://www1.hkexnews.hk/app/sehk/2024/106831/documents/sehk24093002350_c.pdf">啄木鸟上市申请版本，香港交易所，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://epaper.xkb.com.cn/view/1241492">新快报，宠托师平台门槛，2024-10-18</a></li>
+<li><a target="_blank" rel="noopener" href="https://web.archive.org/web/20261023142137/https://www.thumbtack.com/guarantee">Thumbtack 保障页面，存档 2026-10-23</a></li>
+<li><a target="_blank" rel="noopener" href="https://support.taskrabbit.com">TaskRabbit 帮助中心</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.nber.org/papers/w25857">Filippas、Horton、Golden，声誉膨胀，NBER</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.sina.cn/2026-02-06/detail-inhkvvnm8260506.d.html">中消协 2025 年投诉报告，新浪，2026-02-06</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1764757/000110465926042350/didi-20251231x20f.htm">滴滴 2025 年报，美国证监会，2026-04-13</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.eeo.com.cn/2025/0218/711925.shtml">经济观察网，大众点评评价治理，2025-02-18</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.nber.org/papers/w26601">Farronato 等，平台执照核验与服务质量，NBER</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.nber.org/papers/w35635">Hall 等，执照与 Uber 服务质量，NBER，2026-08</a></li>
+<li><a target="_blank" rel="noopener" href="https://api.openalex.org/works?search=Inefficient%20hiring%20in%20entry-level%20labor%20markets">Pallais，新人入门市场的低效雇佣，American Economic Review，2014</a></li>
+<li><a target="_blank" rel="noopener" href="http://web.archive.org/web/20260609213743/https://www.gartner.com/en/newsroom/press-releases/2024-02-01-gartner-predicts-30-percent-of-enterprises-will-consider-identity-verification-and-authentication-solutions-unreliable-in-isolation-due-to-deepfakes-by-2026">Gartner，深度伪造与身份核验，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://api.openalex.org/works?search=Does%20a%20criminal%20past%20predict%20worker%20performance%20evidence%20from%20America%27s%20largest%20employers">Lundquist 等，犯罪记录与工作表现</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bdcb.cn/shtml/bdcb/20260723/20260723A022.html">半岛晨报，商务部家政信用查归集 900 万人，2026-07-23</a></li>
+<li><a target="_blank" rel="noopener" href="https://hhs.iowa.gov/medicaid/about-medicaid/medicaid-projects/evv">爱荷华州医疗补助，电子到访核验</a></li>
+<li><a target="_blank" rel="noopener" href="https://zxb.ccn.com.cn/html/zxb/20260730/139029.html">中国消费者报，家政保险价格，2026-07-30</a></li>
+<li><a target="_blank" rel="noopener" href="https://zxb.ccn.com.cn/html/zxb/20260731/139048.html">中国消费者报，陪诊行业问题，2026-07-31</a></li>
+</ol>
+<h3>附：本题调研的其他来源</h3>
+<h4>海外平台</h4>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1842356/000184235625000029/pet-20241231.htm">Wag 2024 年报，2025-03-24</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1842356/000184235625000090/0001842356-25-000090-index.htm">Wag 破产公告，2025-07-21</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1800227/000162828026009997/iaci-20251231.htm">IAC 2025 年报（含 Care.com），2026-02-20</a></li>
+<li><a target="_blank" rel="noopener" href="https://web.archive.org/web/20251206122004/https://www.care.com/about/safety/background-checks/care-com-background-check/">Care.com 背景调查说明，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://web.archive.org/web/20260112062419/https://www.care.com/about/safety/background-checks/enhanced-background-check/">Care.com 加强版背调，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://web.archive.org/web/20230924224259/https://www.care.com/about/press/care-com-enhances-its-caregiver-screening-with-in-depth-background-checks-and-expands-safety-expertise-on-board/">Care.com 2019 年补救措施公告，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnbc.com/2019/12/20/iac-to-acquire-carecom-in-500-million-deal.html">CNBC，IAC 收购 Care.com，2019-12-20</a></li>
+<li><a target="_blank" rel="noopener" href="https://web.archive.org/web/20240415180026/https://support.taskrabbit.com/hc/en-us/articles/360035570011-Taskrabbit-Happiness-Pledge">TaskRabbit 2023 年保障条款，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://press.thumbtack.com/announcements/thumbtack-announces-1-million-guarantee/">Thumbtack 2016 年 100 万美元保障公告</a></li>
+<li><a target="_blank" rel="noopener" href="https://web.archive.org/web/20261022041742/https://www.thumbtack.com/safety">Thumbtack 安全页面，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://sfdistrictattorney.org/district-attorney-brooke-jenkins-announces-a-6-82-million-settlement-and-permanent-injunction-in-false-advertising-lawsuit/">旧金山地检署，HomeAdvisor 虚假宣传罚款，2023-05-23</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.angi.com/landing/happiness-guarantee">Angi 保障计划</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1705110/000170511026000011/angi-20251231.htm">Angi 2025 年报，2026-02-20</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm">Airbnb 2025 年报，2026-02-12</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1559720/000119312526048670/d58192dex991.htm">Airbnb 2025 年第四季度股东信，2026-02-12</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1559720/000119312525269432/d40503dex991.htm">Airbnb 2025 年第三季度股东信，2025-11-06</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.airbnb.com/aircover-for-hosts">Airbnb AirCover 房东保障</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm">Uber 2025 年报，2026-02-13</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1759509/000162828026006960/lyft-20251231.htm">Lyft 2025 年报，2026-02-11</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1792789/000179278926000013/dash-20251231.htm">DoorDash 2025 年报</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.restaurantdive.com/news/doordash-AI-chat-feature-detects-harassment-between-workers-and-customers/709992/">Restaurant Dive，DoorDash AI 聊天审核，2024-03</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1627475/000162747526000012/upwk-20251231.htm">Upwork 2025 年报</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.airtasker.com/au/insurance/">Airtasker 保险说明</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.rover.com/rover-guarantee/">Rover 保障说明</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.rover.com/blog/safety/">Rover 安全说明</a></li>
+</ul>
+<h4>国内平台</h4>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www1.hkexnews.hk/app/sehk/2026/108488/documents/sehk26043002913_c.pdf">拉拉科技上市申请版本，香港交易所，2026-04-30</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1525494/000110465920053363/wuba-20191231x20f.htm">58.com 2019 年报，美国证监会，2020-04-29</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.nbd.com.cn/articles/2021-02-24/1634914.html">每日经济新闻，货拉拉整改，2021-02-24</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jiemian.com/article/6450961.html">界面新闻，货拉拉整改进度，2021-08-06</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.sina.com.cn/roll/2026-05-12/doc-inhxsawi5070316.shtml">新浪财经，货拉拉社会价值报告，2026-05-12</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.sina.com.cn/chanjing/gsnews/2019-11-06/doc-iicezzrr7592704.shtml">新浪财经，滴滴顺风车整改，2019-11-06</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.thepaper.cn/newsDetail_forward_4889776">澎湃新闻，顺风车整改问题清单，2019-11-07</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.sina.com.cn/tech/roll/2026-07-02/doc-inifmmmw4110233.shtml">新浪科技，美团骑手职业伤害保障，2026-07-02</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.meituan.com/news/NN240321060008678">美团新闻，生活服务调研，2024-03-21</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.sina.com.cn/jjxw/2025-02-13/doc-inekimaa0735731.shtml">新浪财经，美团无忧保洁，2025-02-13</a></li>
+<li><a target="_blank" rel="noopener" href="https://finance.sina.com.cn/roll/2026-03-25/doc-inhsffcu3507234.shtml">新浪财经，大众点评 2025 年评价治理，2026-03-25</a></li>
+<li><a target="_blank" rel="noopener" href="https://news.qq.com/rain/a/20260323A074JP00">腾讯新闻，大众点评 AI 审评价，2026-03-23</a></li>
+<li><a target="_blank" rel="noopener" href="https://m.thepaper.cn/newsDetail_forward_1521069">澎湃新闻，闲鱼实人认证，2016-08-29</a></li>
+<li><a target="_blank" rel="noopener" href="https://news.qq.com/rain/a/20250723A06LI100">腾讯新闻，闲鱼反诈数据，2025-07-23</a></li>
+<li><a target="_blank" rel="noopener" href="https://tech.sina.cn/i/gn/2019-06-27/detail-ihytcitk8146684.d.html">新浪科技，闪送准入与赔付，2019-06-27</a></li>
+<li><a target="_blank" rel="noopener" href="https://web.archive.org/web/20250117183823/https://www.chinapr.com.cn/256/201710/478.html">中国公关网，e代驾考核通过率，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://news.qq.com/rain/a/20231126A05XGI00">腾讯新闻，e代驾保险，2023-11-26</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.news.cn/enterprise/20250107/8bd6e6773bbe4d46befbfad16cb0b8c7/c.html">新华网，京东家政招募，2025-01-07</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.news.cn/enterprise/20260203/e9f8431d16f24762be43db4ca92d17c9/c.html">新华网，京东家政标准流程，2026-02-03</a></li>
+<li><a target="_blank" rel="noopener" href="https://m.thepaper.cn/newsDetail_forward_32664811">澎湃新闻，宠物上门保险空白，2026-02-27</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.news.cn/gongyi/20250527/d7d6c0fa040b44d08dd7f7d41a740f9e/c.html">新华网，陪诊机构审核，2025-05-27</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ayilaile.com/service/">阿姨来了服务页</a></li>
+<li><a target="_blank" rel="noopener" href="https://news.tom.com/201906/4852546159.html">TOM 资讯，好慷在家员工制，2019-06-04</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.xinhuanet.com/globe/20240923/e0545cb99e164c6384aaf7d86d22f322/c.html">新华网《环球》，天鹅到家 AI，2024-09-23</a></li>
+<li><a target="_blank" rel="noopener" href="https://pub.timedg.com/a/2023-03/15/AP6411d034e4b04ff43bb58e4c.html">东莞时间网，中消协 2023 年消费信心调查，2023-03-15</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cqnews.net/1/detail/1177555745008308224/web/content_1177555745008308224.html">华龙网，商务部家政信用查，2023-11-24</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jiemian.com/article/12479557.html">界面新闻，3·15 啄木鸟后续，2025-03-17</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.rccaijing.com/news-7298247771122496749.html">瑞财经，美团骑手保障投入，2025-02-20</a></li>
+</ul>
+<h4>能力核验与信任研究</h4>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://homepages.se.edu/cvonbergen/files/2013/11/The-Validity-and-Utility-of-Selection-Methods-in-Personnel-Psychology_Practical-and-Theoretical-Implications-of-85-Years-of-Research-Findings.pdf">Schmidt 与 Hunter，85 年选拔研究，1998</a></li>
+<li><a target="_blank" rel="noopener" href="http://web.archive.org/web/20260604195927/https://home.ubalt.edu/tmitch/645/session%204/Schmidt%20%26%20Oh%20validity%20and%20util%20100%20yrs%20of%20research%20Wk%20PPR%202016.pdf">Schmidt、Oh、Shaffer，100 年选拔研究更新，2016，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://api.openalex.org/works/doi:10.5465/amr.1998.926622">McKnight，初始信任模型，1998</a></li>
+<li><a target="_blank" rel="noopener" href="https://api.openalex.org/works/doi:10.1287/isre.13.3.334.81">McKnight 等，电商信任构念，2002</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.nber.org/papers/w20830">Nosko 与 Tadelis，平台声誉的局限，NBER</a></li>
+<li><a target="_blank" rel="noopener" href="http://web.archive.org/web/20261005123226/https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2554500">Zervas 等，Airbnb 评分分布，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.nber.org/papers/w29096">Jin 与 Vasserman，被监测会改变行为，NBER</a></li>
+<li><a target="_blank" rel="noopener" href="http://web.archive.org/web/20250911053310/https://www.care.com/about/press/care-com-releases-2017-babysitter-survey-results/">Care.com 2017 年家长调查，存档</a></li>
+<li><a target="_blank" rel="noopener" href="http://web.archive.org/web/20261014040531/https://www.entrust.com/company/newsroom/deepfake-attacks-strike-every-five-minutes-amid-244-surge-in-digital-document-forgeries">Entrust 2025 身份欺诈报告，存档</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.hrdive.com/news/fake-job-candidates-ai/757126/">HR Dive，虚假求职者与面试欺诈，2025-07</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.hirevue.com/platform/virtual-job-tryout">HireVue 虚拟试工</a></li>
+<li><a target="_blank" rel="noopener" href="https://dhcf.dc.gov/page/electronic-visit-verification-evv">华盛顿特区，电子到访核验</a></li>
+<li><a target="_blank" rel="noopener" href="https://c2pa.org/">C2PA 内容凭证标准</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.truepic.com/">Truepic 拍摄端核验</a></li>
+</ul></article>
+<nav class="pn-row"><a class="pn prev" href="q12.html"><span>上一题</span>哪些非标上门服务是现有平台接不住的？</a><a class="pn next" href="index.html"><span>读完了</span>回到全部问题</a></nav>
+</main>
+<footer>AI 原生真人服务网络：问题与分析 · 更新于 2026-10-28</footer>
+</body></html>
